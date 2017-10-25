@@ -2,9 +2,9 @@
 This library aims at debugging sqlite database more easy and efficient, we don't have to export the dabasefile to PC and then analyze the original data any more, now you can use OnlineSqlite via browser directly!
 
 ## Usage
-**Step 1.** Add it in your root build.gradle at the end of repositories:
+**Step 1.** Add the JitPack repository to your build file: 
 
-```java
+```groovy
 	allprojects {
 		repositories {
 			...
@@ -13,7 +13,15 @@ This library aims at debugging sqlite database more easy and efficient, we don't
 	}
 ```
 
-2. 
+**Step 2.** Add library dependency in your gradle:
+
+```groovy
+	dependencies {
+	    compile 'com.github.Ralken:OnlineSqlite:online-sqlite-library:2e4eeb9'
+	}
+```
+
+**Step 3.** Config the OnlineSqlite settings: 
 
 ```
   final OnlineConfig config = new OnlineConfig.Builder()
@@ -31,8 +39,11 @@ This library aims at debugging sqlite database more easy and efficient, we don't
     }
 ```
 
-# Project specification
+##  Project specification
 This project started on Oct. 24 2017 and its now a pretty beta-version, it's working well at the moment but some experice can be further improved- especilly the Web/Javascript part. You will be very welcome if you're interested in this project and willing to contribute your effort to make it better! Please send a pull request, thanks!
+
+## Reference
+ - *Updating sooner..*
 
 ## License
 
