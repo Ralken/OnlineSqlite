@@ -17,7 +17,7 @@ This library aims at debugging sqlite database more easy and efficient, we don't
 
 ```groovy
 	dependencies {
-	    compile 'com.github.Ralken:OnlineSqlite:online-sqlite-library:2e4eeb9'
+	    compile 'com.github.Ralken:OnlineSqlite:b641bfa88a'
 	}
 ```
 
