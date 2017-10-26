@@ -49,8 +49,7 @@ public class HandlerServer extends NanoHTTPD {
             InputStream allocateBuffer;
 
             final String targetDatabasePath = OnlineSqlite.getInstance().getOnlineConfig().getDatabasePath();
-
-            LightLogger.d("Serve requested uri: " + uri);
+            // LightLogger.d("Serve requested uri: " + uri);
 
             if (uri.contains(".js")) {
                 allocateBuffer = mContext.getAssets().open(uri.substring(1));
