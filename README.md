@@ -45,6 +45,9 @@ This project started on Oct. 24 2017 and its now a pretty beta-version, it's wor
 ## Reference
  - *Updating sooner..*
 
+## Note
+Due to OnlineSqlite is working based on a long lived HTTP service in the background, it should work only under non-product environment. It's strongly recommend that you turn on the service in **debug/test** case only.
+
 ## License
 
 ```
