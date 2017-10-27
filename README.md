@@ -43,7 +43,7 @@ This library aims at debugging sqlite database more easy and efficient, we don't
 This project started on Oct. 24 2017 and its now a pretty beta-version, it's working well at the moment but some experice can be further improved- especilly the Web/Javascript part. You will be very welcome if you're interested in this project and willing to contribute your effort to make it better! Please send a pull request, thanks!
 
 ## Reference
- - *Updating sooner..*
+ - [NanoHttpd](https://github.com/NanoHttpd/nanohttpd) - Core embeddable HTTP server component.
 
 ## Note
 Due to OnlineSqlite is working based on a long lived HTTP service in the background, it should work only under non-product environment. It's strongly recommend that you turn on the service in **debug/test** case only.
