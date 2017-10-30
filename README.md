@@ -47,6 +47,7 @@ This project started on Oct. 24 2017 and its now a pretty alpha-version, it's wo
 
 ## Reference
  - [NanoHttpd](https://github.com/NanoHttpd/nanohttpd) - Core embeddable HTTP server component.
+ - [sqlite-viewer](https://github.com/inloop/sqlite-viewer)
 
 ## Note
 Due to OnlineSqlite is working based on a long lived HTTP service in the background, it should work only under non-product environment. It's strongly recommend that you turn on the service in **debug/test** case only.
