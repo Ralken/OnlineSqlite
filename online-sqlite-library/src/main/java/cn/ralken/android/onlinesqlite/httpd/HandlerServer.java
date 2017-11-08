@@ -66,7 +66,7 @@ public class HandlerServer extends NanoHTTPD {
                 LightLogger.d("db file request...");
                 return new NanoHTTPD.Response(HTTP_OK, MIME.MIME_DATABASE, allocateBuffer);
             } else {
-                allocateBuffer = mContext.getAssets().open("SQLiteViewer.html");
+                allocateBuffer = mContext.getAssets().open("index.html");
                 return new NanoHTTPD.Response(HTTP_OK, MIME_HTML, allocateBuffer);
             }
 
