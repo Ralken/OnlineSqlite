@@ -16,7 +16,7 @@ footer small a {
 #main-container {
     position: relative;
     background: #ffffff;
-    box-shadow: 0 1px 16px silver;
+    box-shadow: 0 1px 16px #0f9177;
     z-index: 2;
 }
 
@@ -51,6 +51,7 @@ footer small a {
 
 #header h3 {
     margin: 0;
+    margin-top: 5px;
 }
 
 #resizer {
