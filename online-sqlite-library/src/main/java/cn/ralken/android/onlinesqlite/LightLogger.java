@@ -19,7 +19,7 @@ package cn.ralken.android.onlinesqlite;
  */
 
 public class LightLogger {
-    private static final String LOGGER_TAG = "OnlineSqlite";
+    private static final String LOGGER_TAG = "[OnlineSqlite]";
 
     private LightLogger() {
     }

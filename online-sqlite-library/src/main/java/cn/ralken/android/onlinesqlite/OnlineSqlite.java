@@ -8,7 +8,7 @@ import cn.ralken.android.onlinesqlite.exception.ConfigUnsetException;
 import cn.ralken.android.onlinesqlite.exception.IllegalDatabasePathException;
 import cn.ralken.android.onlinesqlite.exception.UnSupportNetworkException;
 import cn.ralken.android.onlinesqlite.httpd.HandlerServer;
-import cn.ralken.android.onlinesqlite.httpd.util.WifiUtil;
+import cn.ralken.android.onlinesqlite.httpd.WifiUtil;
 
 /**
  * Copyright Ralken Liao
