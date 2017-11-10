@@ -1,4 +1,4 @@
-package cn.ralken.android.onlinesqlite.browser;
+package cn.ralken.android.onlinesqlite.httpd;
 
 /** Copyright Ralken Liao
 
@@ -18,7 +18,7 @@ package cn.ralken.android.onlinesqlite.browser;
  * @date
  */
 
-public class MIME {
+final class MIME {
     /* Common mime types for dynamic content */
     public static final String
             MIME_PLAINTEXT = "text/plain",

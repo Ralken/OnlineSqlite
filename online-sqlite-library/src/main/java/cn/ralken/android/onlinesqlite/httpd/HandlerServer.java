@@ -8,7 +8,6 @@ import java.io.InputStream;
 
 import cn.ralken.android.onlinesqlite.LightLogger;
 import cn.ralken.android.onlinesqlite.OnlineSqlite;
-import cn.ralken.android.onlinesqlite.browser.MIME;
 
 /** Copyright Ralken Liao
 
