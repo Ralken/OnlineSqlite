@@ -1,5 +1,7 @@
 package cn.ralken.android.onlinesqlite;
 
+import java.util.concurrent.TimeUnit;
+
 /** Copyright Ralken Liao
 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,6 +28,7 @@ public class OnlineConfig implements InternalAction {
     private String[] availableTables;
     private boolean readOnly = false;
     private int port;
+    private long shutDownDelay;
 
     public String getDatabasePath() {
         return databasePath;
@@ -47,12 +50,17 @@ public class OnlineConfig implements InternalAction {
         return port;
     }
 
+    public long getShutDownDelay() {
+        return shutDownDelay;
+    }
+
     private OnlineConfig(Builder builder) {
         databasePath = builder.databasePath;
         outputIpAddressEnabled = builder.outputIpAddressEnabled;
         availableTables = builder.availableTables;
         readOnly = builder.readOnly;
         port = builder.port;
+        shutDownDelay = builder.shutDownDelay;
     }
 
     public static final class Builder {
@@ -61,6 +69,7 @@ public class OnlineConfig implements InternalAction {
         private String[] availableTables;
         private boolean readOnly;
         private int port = DEFAULT_SERVICE_PORT;
+        private long shutDownDelay = TimeUnit.MINUTES.toMillis(30);
 
         public Builder() {
         }
@@ -82,6 +91,11 @@ public class OnlineConfig implements InternalAction {
 
         public Builder setPort(int port) {
             this.port = port;
+            return this;
+        }
+
+        public Builder setShutDownDelay(long delay) {
+            this.shutDownDelay = delay;
             return this;
         }
 
