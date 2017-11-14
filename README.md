@@ -23,7 +23,7 @@ This library aims at debugging sqlite database more easy and efficient, we don't
 
 **Step 3.** Config the OnlineSqlite settings: 
 
-```
+```java
   final OnlineConfig config = new OnlineConfig.Builder()
                     .setDatabasePath(path)
                     .setAvailableTables(tables)
