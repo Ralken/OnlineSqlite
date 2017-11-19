@@ -29,7 +29,7 @@ This library aims at debugging sqlite database more easy and efficient, we don't
                     .setAvailableTables(tables)
                     .setOutputIpAddressEnabled(true)
                     .setReadOnly(false)
-		    .setAutoShutDown
+		    .setAutoShutDown()false
                     .build();
 
     try {
