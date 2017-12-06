@@ -1,16 +1,4 @@
-package cn.ralken.android.onlinesqlite;
-
-import android.app.Application;
-import android.content.Context;
-
-import cn.ralken.android.onlinesqlite.exception.AssetIOException;
-import cn.ralken.android.onlinesqlite.exception.ConfigUnsetException;
-import cn.ralken.android.onlinesqlite.exception.IllegalDatabasePathException;
-import cn.ralken.android.onlinesqlite.exception.UnSupportNetworkException;
-import cn.ralken.android.onlinesqlite.httpd.HandlerServer;
-import cn.ralken.android.onlinesqlite.httpd.WifiUtil;
-
-/**
+/*
  * Copyright Ralken Liao
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,6 +16,18 @@ import cn.ralken.android.onlinesqlite.httpd.WifiUtil;
  * @author Ralken Liao
  * @date
  */
+
+package cn.ralken.android.onlinesqlite;
+
+import android.app.Application;
+import android.content.Context;
+
+import cn.ralken.android.onlinesqlite.exception.AssetIOException;
+import cn.ralken.android.onlinesqlite.exception.ConfigUnsetException;
+import cn.ralken.android.onlinesqlite.exception.IllegalDatabasePathException;
+import cn.ralken.android.onlinesqlite.exception.UnSupportNetworkException;
+import cn.ralken.android.onlinesqlite.httpd.HandlerServer;
+import cn.ralken.android.onlinesqlite.httpd.WifiUtil;
 
 public class OnlineSqlite implements InternalAction {
     private final Context context;
